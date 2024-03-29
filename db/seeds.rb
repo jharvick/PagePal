@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-User.create(name: "Jared", email: "jared@test.com", password_digest: "password", image_url: "https://static.wikia.nocookie.net/p__/images/3/36/Farvarod_08.png/revision/latest?cb=20190728143717&path-prefix=protagonist")
-User.create(name: "Chloe", email: "chloe@test.com", password_digest: "password", image_url: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F02%2F2475_tp_00013r-2000.jpg")
+User.create(name: "Jared", email: "jared@test.com", password: "password", image_url: "https://static.wikia.nocookie.net/p__/images/3/36/Farvarod_08.png/revision/latest?cb=20190728143717&path-prefix=protagonist")
+User.create(name: "Chloe", email: "chloe@test.com", password: "password", image_url: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F02%2F2475_tp_00013r-2000.jpg")
 
 Item.create(name: "Dune", image_url: "https://covers.shakespeareandcompany.com/97814732/9781473233959.jpg", description: "A sci-fi epic", category: "Sci-Fi")
 Item.create(name: "A Court of Silver Flames", image_url: "https://images-na.ssl-images-amazon.com/images/I/51Q6Zz1ZJ9L._SX329_BO1,204,203,200_.jpg", description: "A fantasy romance", category: "Fantasy")
