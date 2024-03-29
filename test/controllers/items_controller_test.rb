@@ -27,4 +27,10 @@ class ItemsControllerTest < ActionDispatch::IntegrationTest
     assert_equal ["name", "image_url", "description", "category", "created_at", "updated_at"], data.keys
   end
 
+  test "destroy" do
+    assert_difference "Item.count", -1 do
+      delete "/items/#{Item.first.id}.json"
+      assert_response 200
+    end
+  end
 end
