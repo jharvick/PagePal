@@ -13,4 +13,9 @@ class ItemsController < ApplicationController
     )
     render :show
   end
+
+  def show
+    @item = Item.find_by(id: params[:id])
+    render :show
+  end
 end

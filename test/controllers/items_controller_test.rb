@@ -19,4 +19,12 @@ class ItemsControllerTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test "show" do
+    get "/items/#{Item.first.id}.json"
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal ["name", "image_url", "description", "category", "created_at", "updated_at"], data.keys
+  end
+
 end
