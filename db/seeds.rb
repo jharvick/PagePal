@@ -10,7 +10,7 @@ User.create(name: "Jared", email: "jared@test.com", password: "password", image_
 User.create(name: "Chloe", email: "chloe@test.com", password: "password", image_url: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F02%2F2475_tp_00013r-2000.jpg")
 
 Item.create(name: "Dune", image_url: "https://covers.shakespeareandcompany.com/97814732/9781473233959.jpg", description: "A sci-fi epic", category: "Sci-Fi")
-Item.create(name: "A Court of Silver Flames", image_url: "https://images-na.ssl-images-amazon.com/images/I/51Q6Zz1ZJ9L._SX329_BO1,204,203,200_.jpg", description: "A fantasy romance", category: "Fantasy")
+Item.create(name: "A Court of Silver Flames", image_url: "https://m.media-amazon.com/images/I/814ZCEQqyrL._AC_UF1000,1000_QL80_.jpg", description: "A fantasy romance", category: "Fantasy")
 
 Favorite.create(user_id: 1, item_id: 1)
 Favorite.create(user_id: 2, item_id: 2)
