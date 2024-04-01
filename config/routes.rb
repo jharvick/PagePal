@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get "/favorites" => "favorites#index"
   post "/favorites" => "favorites#create"
   
+  get "/books" => "books#index"
 end

@@ -1,7 +1,7 @@
 require "test_helper"
 
 class ItemsControllerTest < ActionDispatch::IntegrationTest
-
+  
   test "index" do
     get "/items.json"
     assert_response 200
